@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mina Electric | الحلول الكهربائية المتكاملة</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="brand-container">
+        <a href="#" class="brand">EL MINA <span>ELECTRIC</span></a>
+        <div class="social-header">
+            <a href="https://wa.me/96179180506" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <span class="phone-num">+961 79 180 506</span>
+           <a href="https://instagram.com/elminaelectric" target="_blank" title="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+            <a href="https://facebook.com/profile.php?id=61587866826683" target="_blank" title="Facebook">
+    <i class="fa-brands fa-facebook"></i>
+</a>
+        </div>
+    </div>
+    <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#services">تخصصاتنا</a></li>
+        <li><a href="#repair">مركز الصيانة</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>El Mina Electric</h1>
+        <p>حلول الطاقة المتكاملة - من التأسيس المنزلي إلى المعدات الصناعية الثقيلة</p>
+        <a href="#services" class="btn">اكتشف تخصصاتنا</a>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2 class="section-title">تخصصاتنا</h2>
+
+    <div class="grid">
+
+        <div class="card" onclick="toggleDetails('regulators')">
+            <i class="fa-solid fa-bolt-lightning special-icon"></i>
+            <h3>المنظمات الكهربائية</h3>
+            <p>حماية فائقة وحلول استقرار التيار.</p>
+            <div class="details" id="regulators">
+                <img src="images/regulators.jpg" alt="Regulators">
+                <p>منظمات جهد كهربائي عالية الدقة لحماية الأجهزة الحساسة والمعدات الصناعية من تقلبات التيار.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleDetails('batteries')">
+            <i class="fa-solid fa-car-battery special-icon"></i>
+            <h3>البطاريات والشواحن</h3>
+            <p>أنظمة شحن ذكية.</p>
+            <div class="details" id="batteries">
+                <img src="images/batteries.jpg" alt="Batteries">
+                <p>بطاريات صناعية ومنزلية عالية الكفاءة مع شواحن ذكية للأحمال الثقيلة والاستمرارية الطويلة.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleDetails('ups')">
+            <i class="fa-solid fa-microchip special-icon"></i>
+            <h3>أنظمة UPS</h3>
+            <p>استمرارية الطاقة.</p>
+            <div class="details" id="ups">
+                <img src="images/circuit.jpg" alt="UPS">
+                <p>أنظمة UPS متطورة لحماية البيانات وضمان عدم انقطاع التيار في المؤسسات والمنازل.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="toggleDetails('homeDetails')"
+>
+            <i class="fa-solid fa-house-tsunami special-icon"></i>
+            <h3>الكهرباء المنزلية والطاقة الشمسية</h3>
+            <p>تأسيس وصيانة وحلول طاقة متكاملة.</p>
+            <div class="details" id="homeDetails">
+
+                <img src="images/home.jpg" alt="Home Electrical">
+                <img src="images/home_elec.jpg" alt="Home Setup">
+                <img src="images/solar.jpg" alt="Solar Energy">
+                <p>
+                    تنفيذ جميع أعمال الكهرباء المنزلية باحترافية عالية،
+                    بالإضافة إلى تركيب أنظمة الطاقة الشمسية للمنازل والمكاتب والمصانع
+                    لتوفير الطاقة وخفض التكاليف.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="repair-banner" id="repair">
+    <div class="repair-text">
+        <h2><i class="fa-solid fa-screwdriver-wrench"></i> مركز صيانة الموتورات</h2>
+        <p>خبراء في إعادة لف وتصليح كافة أنواع الموتورات الصناعية والمنزلية بدقة متناهية.</p>
+
+        <!-- الصورة داخل نفس الـ div -->
+        <img src="images/motor.jpg" alt="Motor Repair" class="motor-img">
+
+        <a href="https://wa.me/96179180506" class="btn whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب
+        </a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-info">
+        <h2 class="footer-title">El Mina Electric</h2>
+        <p><i class="fa-solid fa-location-dot"></i> طرابلس ، الميناء ، القاعة الرياضية</p>
+        <p><i class="fa-solid fa-phone"></i> +961 79 180 506</p>
+    </div>
+    <hr>
+    <p class="copyright">&copy; 2026 El Mina Electric - جميع الحقوق محفوظة</p>
+</footer>
+
+<script src="js/web.js"></script>
+
+
+</body>
+</html>
